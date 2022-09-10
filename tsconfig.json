@@ -1,7 +1,20 @@
 {
     "compilerOptions": {
+        "baseUrl": "./",
+        "paths": {
+            "@/*": [
+                "src/*"
+            ],
+            "~/*": [
+                "./*"
+            ]
+        },
         "target": "esnext",
-        "lib": ["dom", "dom.iterable", "esnext"],
+        "lib": [
+            "dom",
+            "dom.iterable",
+            "esnext"
+        ],
         "allowJs": true,
         "skipLibCheck": true,
         "esModuleInterop": true,
@@ -16,5 +29,12 @@
         "noEmit": true,
         "jsx": "react-jsx"
     },
-    "include": ["src"]
+    "include": [
+        "src/typings/*.d.ts",
+        "src/**/*",
+    ],
+    "exclude": [
+        "/build/**",
+        "node_modules"
+    ]
 }
