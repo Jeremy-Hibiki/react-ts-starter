@@ -20,5 +20,4 @@ dist-ssr
 .prettierrc.js
 .eslintrc.js
 
-vite.config.ts
-windi.config.ts
+*.config.*
