@@ -23,7 +23,13 @@ module.exports = {
             'error',
             {
                 'newlines-between': 'never',
-                groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'],
+                groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object', 'type'],
+                pathGroups: [
+                    {
+                        pattern: '@/**',
+                        group: 'internal',
+                    },
+                ],
             },
         ],
         'import/prefer-default-export': 0,
@@ -34,10 +40,10 @@ module.exports = {
         'no-param-reassign': 0,
         'no-plusplus': 0,
         'no-shadow': 0,
-        'no-unused-vars': 'off',
+        'no-unused-vars': ['warn', 'local'],
         'no-use-before-define': 'off',
         '@typescript-eslint/ban-types': 'off',
-        '@typescript-eslint/ban-ts-ignore': 'off',
+        '@typescript-eslint/ban-ts-comment': 'off',
         '@typescript-eslint/explicit-function-return-type': 'off',
         '@typescript-eslint/explicit-module-boundary-types': 'off',
         '@typescript-eslint/no-empty-function': 'off',
@@ -46,10 +52,11 @@ module.exports = {
         '@typescript-eslint/no-non-null-assertion': 'off',
         '@typescript-eslint/no-unused-vars': [
             'warn',
-            { ignoreRestSiblings: true, argsIgnorePattern: '^_', varsIgnorePattern: '^(_|props?|emits?)|[iI]gnored' },
+            { ignoreRestSiblings: true, argsIgnorePattern: '^_', varsIgnorePattern: '^(_|props?)|[iI]gnored' },
         ],
         '@typescript-eslint/no-use-before-define': ['error', { classes: true, functions: false, typedefs: false }],
         '@typescript-eslint/no-var-requires': 'off',
+        'prettier/prettier': 1,
     },
     settings: {
         react: {

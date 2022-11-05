@@ -4,7 +4,6 @@ module.exports = {
     bracketSpacing: true,
     endOfLine: 'crlf',
     embeddedLanguageFormatting: 'auto',
-    eslintIntegration: true,
     htmlWhitespaceSensitivity: 'css',
     insertPragma: false,
     jsxSingleQuote: false,
@@ -14,8 +13,7 @@ module.exports = {
     requirePragma: false,
     semi: true,
     singleQuote: true,
-    tabWidth: 4,
-    tslintIntegration: false,
+    tabWidth: 2,
     trailingComma: 'es5',
     useTabs: false,
     overrides: [
