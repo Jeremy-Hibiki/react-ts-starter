@@ -1,6 +1,7 @@
 import path from 'path';
+import { CracoConfig } from '@craco/types';
 
-module.exports = {
+const config: CracoConfig = {
     webpack: {
         alias: {
             '@': path.resolve(__dirname, './src'),
@@ -8,3 +9,5 @@ module.exports = {
         },
     },
 };
+
+module.exports = config;
