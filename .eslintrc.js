@@ -5,7 +5,7 @@ module.exports = {
         es2021: true,
         node: true,
     },
-    extends: ['airbnb-base', 'plugin:@typescript-eslint/recommended', 'react-app', 'prettier'],
+    extends: ['airbnb-base', 'plugin:@typescript-eslint/recommended', 'react-app', 'plugin:prettier/recommended'],
     parser: '@typescript-eslint/parser',
     parserOptions: {
         ecmaFeatures: {
